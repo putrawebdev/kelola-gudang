@@ -33,15 +33,16 @@
     <table class="data-table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>No</th>
                 <th>Nama Kategori</th>
                 <th class="col-aksi"><i class="bi bi-gear"></i></th>
             </tr>
         </thead>
         <tbody>
+            @php($i = 0)
             @forelse ($kategoris as $kategori)
             <tr>
-                <td>{{ $kategori->id }}</td>
+                <td>{{ ++$i }}</td>
                 <td>{{ $kategori->nama }}</td>
                 <td class="col-aksi">
                     <button class="act act-edit" data-open="modalKategori-{{ $kategori->id }}" aria-label="Edit"><i class="bi bi-pencil-square"></i></button>

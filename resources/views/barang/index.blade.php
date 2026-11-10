@@ -33,7 +33,7 @@
     <table class="data-table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>No</th>
                 <th>Nama Barang</th>
                 <th>Harga</th>
                 <th>Stok</th>
@@ -42,9 +42,10 @@
             </tr>
         </thead>
         <tbody>
+            @php($i = 0)
             @forelse ($barangs as $barang)
             <tr>
-                <td>{{ $barang->id }}</td>
+                <td>{{ ++$i }}</td>
                 <td>{{ $barang->nama }}</td>
                 <td>Rp {{ number_format($barang->harga, 0, ',', '.') }}</td>
                 <td>{{ $barang->stok }}</td>
