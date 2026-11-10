@@ -3,7 +3,8 @@
 
     // Buka/tutup sidebar (tutup otomatis di layar kecil)
     if (layout && window.innerWidth <= 800) layout.classList.add('collapsed');
-    document.getElementById('toggleSidebar')?.addEventListener('click', () => layout.classList.toggle('collapsed'));
+    document.getElementById('toggleSidebar')?.addEventListener('click', () => layout?.classList.toggle('collapsed'));
+    document.getElementById('closeSidebar')?.addEventListener('click', () => layout?.classList.add('collapsed'));
 
     // Layar penuh
     document.getElementById('toggleFullscreen')?.addEventListener('click', () => {

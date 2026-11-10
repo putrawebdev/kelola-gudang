@@ -2,7 +2,11 @@
     <div class="brand">
         <span class="brand-logo"><i class="bi bi-box-seam"></i></span>
         <span class="brand-name">kelola gudang</span>
+        <button class="icon-btn sidebar-close" id="closeSidebar" aria-label="Tutup menu">
+            <i class="bi bi-x-lg"></i>
+        </button>
     </div>
+    
 
     <div class="side-search">
         <input type="text" aria-label="Cari menu" id="menuSearch">
